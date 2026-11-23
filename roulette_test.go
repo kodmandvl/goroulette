@@ -55,8 +55,8 @@ func TestRouletteOutcomeFormat(t *testing.T) {
 	gotWin := false
 	gotLoss := false
 
-	wantWin := fmt.Sprintf("YOU GET YOUR NUMBER %d!", bet)
-	wantLoss := fmt.Sprintf("your number %d did not come up", bet)
+	wantWin := fmt.Sprintf("YOUR NUMBER %d CAME UP!", bet)
+	wantLoss := fmt.Sprintf("Your number %d did not come up", bet)
 
 	for i := 0; i < trials; i++ {
 		res := Roulette(max, bet)

@@ -20,13 +20,13 @@ func Roulette(max, bet int) string {
 
 	if n == bet {
 		return fmt.Sprintf(
-			"VICTORY! YOU ARE LUCKY! FROM 1 TO %d YOU GET YOUR NUMBER %d!",
-			max, bet,
+			"VICTORY! YOU ARE LUCKY! YOUR NUMBER %d CAME UP!",
+			bet,
 		)
 	}
 
 	return fmt.Sprintf(
-		"Failure... You lost... From 1 to %d your number %d did not come up...",
-		max, bet,
+		"Bad luck... You’ve lost... Your number %d did not come up in the range from 1 to %d... (the number %d came up)",
+		bet, max, n,
 	)
 }
